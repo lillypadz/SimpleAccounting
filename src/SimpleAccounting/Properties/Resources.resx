@@ -449,7 +449,7 @@ value</value>
 account</value>
   </data>
   <data name="Word_Receivables" xml:space="preserve">
-    <value>Receivables</value>
+    <value>Distributions</value>
   </data>
   <data name="Word_Liabilities" xml:space="preserve">
     <value>Liabilities</value>
