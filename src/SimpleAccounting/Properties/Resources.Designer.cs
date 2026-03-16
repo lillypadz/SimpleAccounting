@@ -350,7 +350,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Booking data files (*.csv)|*.csv.
+        ///   Looks up a localized string similar to Transaction data files (*.csv)|*.csv.
         /// </summary>
         public static string FileFilter_ImportData {
             get {
@@ -395,7 +395,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journal of booking year.
+        ///   Looks up a localized string similar to Journal of accounting year.
         /// </summary>
         public static string Header_AnnualJournal {
             get {
@@ -458,7 +458,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit booking entry.
+        ///   Looks up a localized string similar to Edit transaction.
         /// </summary>
         public static string Header_EditBooking {
             get {
@@ -485,7 +485,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create new booking entry.
+        ///   Looks up a localized string similar to Create new transaction.
         /// </summary>
         public static string Header_NewBooking {
             get {
@@ -575,7 +575,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attention, currently no booking accounts are configured for import.
+        ///   Looks up a localized string similar to Attention, currently no accounts are configured for import.
         ///Without such configuration for at least one account, this function is disabled..
         /// </summary>
         public static string ImportData_MissingAccountWarning {
@@ -595,7 +595,7 @@ namespace lg2de.SimpleAccounting.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Notes:
-        ///Select the account to which booking are to be imported.
+        ///Select the account to which transactions are to be imported.
         ///(Only accounts that have an import configuration are available for selection).
         ///The imported recipient names and transaction texts can be modified..
         /// </summary>
@@ -708,7 +708,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add booking.
+        ///   Looks up a localized string similar to Add transaction.
         /// </summary>
         public static string Menu_Actions_AddBooking {
             get {
@@ -744,7 +744,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select booking year.
+        ///   Looks up a localized string similar to Select accounting year.
         /// </summary>
         public static string Menu_Actions_SelectYear {
             get {
@@ -1011,8 +1011,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last
-        ///booking.
+        ///   Looks up a localized string similar to Last transaction.
         /// </summary>
         public static string Report_LastBooking_Wrapped {
             get {
@@ -1069,7 +1068,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All entries without set remote account will be updated with an account which is as close as possible to the name of the booking..
+        ///   Looks up a localized string similar to All entries without set remote account will be updated with an account which is as close as possible to the name of the transaction..
         /// </summary>
         public static string Tooltip_SetRemoteAccounts {
             get {
@@ -1078,7 +1077,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proportionate booking value of the entry.
+        ///   Looks up a localized string similar to Proportionate transaction value of the entry.
         /// </summary>
         public static string Tooltip_SplitBookingValue {
             get {
@@ -1206,7 +1205,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Booking no..
+        ///   Looks up a localized string similar to Transaction no..
         /// </summary>
         public static string Word_BookingNumber_Short {
             get {
@@ -1215,7 +1214,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Booking text.
+        ///   Looks up a localized string similar to Transaction text.
         /// </summary>
         public static string Word_BookingText {
             get {
@@ -1498,7 +1497,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Opening booking.
+        ///   Looks up a localized string similar to Opening transaction.
         /// </summary>
         public static string Word_OpeningBooking {
             get {

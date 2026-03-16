@@ -144,10 +144,10 @@ Do you want to save?</value>
     <value>Balance</value>
   </data>
   <data name="Header_EditBooking" xml:space="preserve">
-    <value>Edit booking entry</value>
+    <value>Edit transaction</value>
   </data>
   <data name="Header_NewBooking" xml:space="preserve">
-    <value>Create new booking entry</value>
+    <value>Create new transaction</value>
   </data>
   <data name="Header_CreateAccount" xml:space="preserve">
     <value>Create account</value>
@@ -207,10 +207,10 @@ Do you want to save?</value>
     <value>Splitt</value>
   </data>
   <data name="Word_BookingText" xml:space="preserve">
-    <value>Booking text</value>
+    <value>Transaction text</value>
   </data>
   <data name="Tooltip_SplitBookingValue" xml:space="preserve">
-    <value>Proportionate booking value of the entry</value>
+    <value>Proportionate transaction value of the entry</value>
   </data>
   <data name="Word_BookingNumber" xml:space="preserve">
     <value>Booking number</value>
@@ -248,7 +248,7 @@ Do you want to save?</value>
 (Remote account)</value>
   </data>
   <data name="Word_OpeningBooking" xml:space="preserve">
-    <value>Opening booking</value>
+    <value>Opening transaction</value>
   </data>
   <data name="Word_FollowUp" xml:space="preserve">
     <value>Follow up</value>
@@ -264,7 +264,7 @@ Do you want to save?</value>
   </data>
   <data name="ImportData_Notes" xml:space="preserve">
     <value>Notes:
-Select the account to which booking are to be imported.
+Select the account to which transactions are to be imported.
 (Only accounts that have an import configuration are available for selection).
 The imported recipient names and transaction texts can be modified.</value>
   </data>
@@ -287,7 +287,7 @@ The imported recipient names and transaction texts can be modified.</value>
     <value>Book all</value>
   </data>
   <data name="Word_BookingNumber_Short" xml:space="preserve">
-    <value>Booking no.</value>
+    <value>Transaction no.</value>
   </data>
   <data name="Word_Recipient" xml:space="preserve">
     <value>Recipient</value>
@@ -311,7 +311,7 @@ The imported recipient names and transaction texts can be modified.</value>
     <value>Import of bank account data</value>
   </data>
   <data name="FileFilter_ImportData" xml:space="preserve">
-    <value>Booking data files (*.csv)|*.csv</value>
+    <value>Transaction data files (*.csv)|*.csv</value>
   </data>
   <data name="ImportData_AlreadyBooked" xml:space="preserve">
     <value>&lt;already booked&gt;</value>
@@ -350,7 +350,7 @@ The imported recipient names and transaction texts can be modified.</value>
     <value>Actions</value>
   </data>
   <data name="Menu_Actions_AddBooking" xml:space="preserve">
-    <value>Add booking</value>
+    <value>Add transaction</value>
   </data>
   <data name="Menu_Actions_ImportBookings" xml:space="preserve">
     <value>Import bookings</value>
@@ -359,7 +359,7 @@ The imported recipient names and transaction texts can be modified.</value>
     <value>Close year</value>
   </data>
   <data name="Menu_Actions_SelectYear" xml:space="preserve">
-    <value>Select booking year</value>
+    <value>Select accounting year</value>
   </data>
   <data name="Menu_Actions_NewAccount" xml:space="preserve">
     <value>New account</value>
@@ -395,7 +395,7 @@ The imported recipient names and transaction texts can be modified.</value>
     <value>Check for updates</value>
   </data>
   <data name="Header_AnnualJournal" xml:space="preserve">
-    <value>Journal of booking year</value>
+    <value>Journal of accounting year</value>
   </data>
   <data name="Word_DebitAccount" xml:space="preserve">
     <value>Debit account</value>
@@ -475,8 +475,7 @@ account</value>
 account</value>
   </data>
   <data name="Report_LastBooking_Wrapped" xml:space="preserve">
-    <value>Last
-booking</value>
+    <value>Last transaction</value>
   </data>
   <data name="Report_OpeningAssets" xml:space="preserve">
     <value>Assets</value>
@@ -544,7 +543,7 @@ Output: {1}</value>
     <value>Import in reverse order</value>
   </data>
   <data name="ImportData_MissingAccountWarning" xml:space="preserve">
-    <value>Attention, currently no booking accounts are configured for import.
+    <value>Attention, currently no accounts are configured for import.
 Without such configuration for at least one account, this function is disabled.</value>
   </data>
   <data name="EditAccount_ImportActive" xml:space="preserve">
@@ -656,6 +655,6 @@ Error message:</value>
     <value>Assign Remote Accounts</value>
   </data>
   <data name="Tooltip_SetRemoteAccounts" xml:space="preserve">
-    <value>All entries without set remote account will be updated with an account which is as close as possible to the name of the booking.</value>
+    <value>All entries without set remote account will be updated with an account which is as close as possible to the name of the transaction.</value>
   </data>
 </root>
