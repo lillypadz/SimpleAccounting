@@ -119,7 +119,7 @@ internal class XmlPrinter : IXmlPrinter
 
         using var dialog = new PrintPreviewDialog
         {
-            Document = printDocument, WindowState = FormWindowState.Maximized,
+            Document = printDocument, WindowState = FormWindowState.Normal,
         };
         dialog.ShowDialog();
     }

@@ -70,7 +70,7 @@ public class AppBootstrapper : BootstrapperBase
         // works of ShellView is Window or UserControl
         var settings = new Dictionary<string, object>
         {
-            { "SizeToContent", SizeToContent.Manual }, { "WindowState", WindowState.Maximized }
+            { "SizeToContent", SizeToContent.Manual }, { "WindowState", WindowState.Normal }
         };
 
         await this.DisplayRootViewForAsync<ShellViewModel>(settings);

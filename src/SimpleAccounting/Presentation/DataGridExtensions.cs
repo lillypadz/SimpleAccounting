@@ -18,13 +18,13 @@ internal static class DataGridExtensions
     public static void ResetDataGridColumnSizes(this DependencyObject dependencyObject)
     {
         var dataGrids = FindVisualChildren<DataGrid>(dependencyObject);
-        foreach (var dataGrid in dataGrids)
-        {
-            foreach (DataGridColumn column in dataGrid.Columns.Where(x => !x.Width.IsAuto))
-            {
-                column.Width = new DataGridLength(column.Width.DisplayValue, DataGridLengthUnitType.Pixel);
-            }
-        }
+        //foreach (var dataGrid in dataGrids)
+        //{
+        //    foreach (DataGridColumn column in dataGrid.Columns.Where(x => !x.Width.IsAuto))
+        //    {
+        //        column.Width = new DataGridLength(column.Width.DisplayValue, DataGridLengthUnitType.Pixel);
+        //    }
+        //}
     }
 
     private static IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj)
