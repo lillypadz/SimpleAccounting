@@ -39,6 +39,10 @@ internal interface IMenuViewModel : INotifyPropertyChanged
     ICommand TotalsAndBalancesReportCommand { get; }
     ICommand AssetBalancesReportCommand { get; }
     ICommand AnnualBalanceReportCommand { get; }
+    ICommand CurrentMonthReportCommand { get; }
+    ICommand PreviousMonthReportCommand { get; }
+    ICommand CurrentQuarterReportCommand { get; }
+    ICommand PreviousQuarterReportCommand { get; }
 
     ICommand HelpAboutCommand { get; }
     ICommand HelpFeedbackCommand { get; }

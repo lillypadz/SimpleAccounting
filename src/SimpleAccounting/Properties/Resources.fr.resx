@@ -453,13 +453,16 @@ distant</value>
     <data name="Word_Expenses" xml:space="preserve">
     <value>Charges</value>
   </data>
-    <data name="Report_AnnualNetProfitAndLoss" xml:space="preserve">
+    <data name="Report_NetProfitAndLoss" xml:space="preserve">
     <value>Résultat net annuel</value>
   </data>
-    <data name="Word_Asset" xml:space="preserve">
+	<data name="Word_Asset" xml:space="preserve">
     <value>Actif</value>
   </data>
-    <data name="Word_DebitAccount_Wrapped" xml:space="preserve">
+	<data name="Word_Assets" xml:space="preserve">
+    <value>Actifs</value>
+  </data>
+	<data name="Word_DebitAccount_Wrapped" xml:space="preserve">
     <value>Compte
 de débit</value>
   </data>

@@ -34,7 +34,7 @@ internal class ReportFactory : IReportFactory
         return new TotalJournalReport(new XmlPrinter(), projectData, this.clock);
     }
 
-    public IAnnualBalanceReport CreateAnnualBalance(IProjectData projectData)
+    public IAnnualBalanceReport CreateBalance(IProjectData projectData)
     {
         return new AnnualBalanceReport(new XmlPrinter(), projectData, this.clock);
     }

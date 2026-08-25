@@ -89,9 +89,17 @@
           <MenuItem Header="{x:Static properties:Resources.Menu_Reports_TotalsAndBalances}"
                     Command="{Binding Menu.TotalsAndBalancesReportCommand}" />
           <MenuItem Header="{x:Static properties:Resources.Menu_Reports_AssetBalance}"
-                    Command="{Binding Menu.AssetBalancesReportCommand}" />
+                    Command="{Binding Menu.AssetBalancesReportCommand}"/>
           <MenuItem Header="{x:Static properties:Resources.Menu_Reports_AnnualBalance}"
                     Command="{Binding Menu.AnnualBalanceReportCommand}" />
+          <MenuItem Header="{x:Static properties:Resources.Menu_Reports_CurrentMonth}"
+                    Command="{Binding Menu.CurrentMonthReportCommand}" />
+          <MenuItem Header="{x:Static properties:Resources.Menu_Reports_PreviousMonth}"
+                    Command="{Binding Menu.PreviousMonthReportCommand}" />
+          <MenuItem Header="{x:Static properties:Resources.Menu_Reports_CurrentQuarter}"
+                    Command="{Binding Menu.CurrentQuarterReportCommand}" />
+          <MenuItem Header="{x:Static properties:Resources.Menu_Reports_PreviousQuarter}"
+                    Command="{Binding Menu.PreviousQuarterReportCommand}" />
         </MenuItem>
         <MenuItem Header="{x:Static properties:Resources.Menu_Help}">
           <MenuItem Header="{x:Static properties:Resources.Menu_Help_About}" Command="{Binding Menu.HelpAboutCommand}" />

@@ -449,13 +449,16 @@ konto</value>
   <data name="Word_Expenses" xml:space="preserve">
     <value>Ausgaben</value>
   </data>
-  <data name="Report_AnnualNetProfitAndLoss" xml:space="preserve">
+  <data name="Report_NetProfitAndLoss" xml:space="preserve">
     <value>Jahresüberschuß/-verlust</value>
   </data>
-  <data name="Word_Asset" xml:space="preserve">
+	<data name="Word_Asset" xml:space="preserve">
     <value>Vermögen</value>
   </data>
-  <data name="Word_DebitAccount_Wrapped" xml:space="preserve">
+	<data name="Word_Assets" xml:space="preserve">
+    <value>Vermögen</value>
+  </data>
+	<data name="Word_DebitAccount_Wrapped" xml:space="preserve">
     <value>Soll-
 konto</value>
   </data>

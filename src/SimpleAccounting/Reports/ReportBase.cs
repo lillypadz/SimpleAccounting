@@ -45,15 +45,16 @@ internal class ReportBase
         this.printer.PrintDocument($"{this.printingDate:yyyy-MM-dd} {documentName} {this.YearData.Year}");
     }
 
-    protected void PreparePrintDocument()
+    protected void PreparePrintDocument(DateTime? startDate = null, DateTime? endDate = null, string headerName = null)
     {
         // Placeholders are identified by # in the template.
         // Dictionary entries are identified by @ in the template. (Handled later while printing.)
         this.UpdatePlaceholder("Organization", this.setup.Name);
         this.UpdatePlaceholder("YearName", this.YearData.Year);
-        string startDate = this.YearData.DateStart.ToDateTime().ToString("d", CultureInfo.CurrentCulture);
-        string endDate = this.YearData.DateEnd.ToDateTime().ToString("d", CultureInfo.CurrentCulture);
-        this.UpdatePlaceholder("TimeRange", $"{startDate} - {endDate}");
+        this.UpdatePlaceholder("HeaderName", headerName);
+        var sDate = startDate?.ToString("d", CultureInfo.CurrentCulture);
+        var eDate = endDate?.ToString("d", CultureInfo.CurrentCulture);
+        this.UpdatePlaceholder("TimeRange", $"{sDate} - {eDate}");
         this.UpdatePlaceholder(
             "CurrentDate", this.setup.Location + ", " + this.printingDate.ToString("D", CultureInfo.CurrentCulture));
     }

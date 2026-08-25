@@ -219,7 +219,7 @@ public class MenuViewModelTests
     {
         var sut = CreateSut(out ProjectData projectData, out IReportFactory reportFactory);
         var annualBalanceReport = Substitute.For<IAnnualBalanceReport>();
-        reportFactory.CreateAnnualBalance(projectData).Returns(annualBalanceReport);
+        reportFactory.CreateBalance(projectData).Returns(annualBalanceReport);
         projectData.LoadData(Samples.SampleProject);
 
         sut.AnnualBalanceReportCommand.Execute(null);

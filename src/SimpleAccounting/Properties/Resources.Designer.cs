@@ -386,7 +386,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annual balance.
+        ///   Looks up a localized string similar to Annual Balance.
         /// </summary>
         public static string Header_AnnualBalance {
             get {
@@ -436,6 +436,24 @@ namespace lg2de.SimpleAccounting.Properties {
         public static string Header_CreateAccount {
             get {
                 return ResourceManager.GetString("Header_CreateAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Month Balance.
+        /// </summary>
+        public static string Header_CurrentMonthBalance {
+            get {
+                return ResourceManager.GetString("Header_CurrentMonthBalance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Quarter Balance.
+        /// </summary>
+        public static string Header_CurrentQuarterBalance {
+            get {
+                return ResourceManager.GetString("Header_CurrentQuarterBalance", resourceCulture);
             }
         }
         
@@ -490,6 +508,24 @@ namespace lg2de.SimpleAccounting.Properties {
         public static string Header_NewBooking {
             get {
                 return ResourceManager.GetString("Header_NewBooking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Month Balance.
+        /// </summary>
+        public static string Header_PreviousMonthBalance {
+            get {
+                return ResourceManager.GetString("Header_PreviousMonthBalance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Quarter Balance.
+        /// </summary>
+        public static string Header_PreviousQuarterBalance {
+            get {
+                return ResourceManager.GetString("Header_PreviousQuarterBalance", resourceCulture);
             }
         }
         
@@ -897,11 +933,47 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current month.
+        /// </summary>
+        public static string Menu_Reports_CurrentMonth {
+            get {
+                return ResourceManager.GetString("Menu_Reports_CurrentMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current quarter.
+        /// </summary>
+        public static string Menu_Reports_CurrentQuarter {
+            get {
+                return ResourceManager.GetString("Menu_Reports_CurrentQuarter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Journal.
         /// </summary>
         public static string Menu_Reports_Journal {
             get {
                 return ResourceManager.GetString("Menu_Reports_Journal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Month.
+        /// </summary>
+        public static string Menu_Reports_PreviousMonth {
+            get {
+                return ResourceManager.GetString("Menu_Reports_PreviousMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous quarter.
+        /// </summary>
+        public static string Menu_Reports_PreviousQuarter {
+            get {
+                return ResourceManager.GetString("Menu_Reports_PreviousQuarter", resourceCulture);
             }
         }
         
@@ -993,15 +1065,6 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annual net profit/loss.
-        /// </summary>
-        public static string Report_AnnualNetProfitAndLoss {
-            get {
-                return ResourceManager.GetString("Report_AnnualNetProfitAndLoss", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Balance at the end.
         /// </summary>
         public static string Report_BalanceAtTheEnd {
@@ -1016,6 +1079,15 @@ namespace lg2de.SimpleAccounting.Properties {
         public static string Report_LastBooking_Wrapped {
             get {
                 return ResourceManager.GetString("Report_LastBooking_Wrapped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Net profit/loss.
+        /// </summary>
+        public static string Report_NetProfitAndLoss {
+            get {
+                return ResourceManager.GetString("Report_NetProfitAndLoss", resourceCulture);
             }
         }
         
@@ -1183,6 +1255,15 @@ namespace lg2de.SimpleAccounting.Properties {
         public static string Word_Asset {
             get {
                 return ResourceManager.GetString("Word_Asset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assets.
+        /// </summary>
+        public static string Word_Assets {
+            get {
+                return ResourceManager.GetString("Word_Assets", resourceCulture);
             }
         }
         

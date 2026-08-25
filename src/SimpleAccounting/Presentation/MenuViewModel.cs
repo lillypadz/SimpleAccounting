@@ -132,6 +132,22 @@ internal class MenuViewModel : Screen, IMenuViewModel
         this.OnAnnualBalanceReport,
         () => this.projectData.CurrentYear.Booking.Count != 0);
 
+    public ICommand CurrentMonthReportCommand => new AsyncCommand(
+        this.OnCurrentMonthReport,
+        () => this.projectData.CurrentYear.Booking.Count != 0);
+
+    public ICommand PreviousMonthReportCommand => new AsyncCommand(
+        this.OnPreviousMonthReport,
+        () => this.projectData.CurrentYear.Booking.Count != 0);
+
+    public ICommand CurrentQuarterReportCommand => new AsyncCommand(
+        this.OnCurrentQuarterReport,
+        () => this.projectData.CurrentYear.Booking.Count != 0);
+
+    public ICommand PreviousQuarterReportCommand => new AsyncCommand(
+        this.OnPreviousQuarterReport,
+        () => this.projectData.CurrentYear.Booking.Count != 0);
+
     public ObservableCollection<MenuItemViewModel> BookingYears { get; } = [];
 
     public ICommand HelpAboutCommand => new AsyncCommand(
@@ -300,9 +316,37 @@ internal class MenuViewModel : Screen, IMenuViewModel
 
     private void OnAnnualBalanceReport()
     {
-        var report = this.reportFactory.CreateAnnualBalance(this.projectData);
+        var report = this.reportFactory.CreateBalance(this.projectData);
         string title = Resources.Header_AnnualBalance;
         report.CreateReport();
+        report.ShowPreview(title);
+    }
+    private void OnCurrentMonthReport()
+    {
+        var report = this.reportFactory.CreateBalance(this.projectData);
+        string title = Resources.Header_CurrentMonthBalance;
+        report.CreateReport(AnnualBalanceReport.PeriodCodes.CurrentMonth);
+        report.ShowPreview(title);
+    }
+    private void OnPreviousMonthReport()
+    {
+        var report = this.reportFactory.CreateBalance(this.projectData);
+        string title = Resources.Header_PreviousMonthBalance;
+        report.CreateReport(AnnualBalanceReport.PeriodCodes.LastMonth);
+        report.ShowPreview(title);
+    }
+    private void OnCurrentQuarterReport()
+    {
+        var report = this.reportFactory.CreateBalance(this.projectData);
+        string title = Resources.Header_CurrentMonthBalance;
+        report.CreateReport(AnnualBalanceReport.PeriodCodes.CurrentQuarter);
+        report.ShowPreview(title);
+    }
+    private void OnPreviousQuarterReport()
+    {
+        var report = this.reportFactory.CreateBalance(this.projectData);
+        string title = Resources.Header_PreviousQuarterBalance;
+        report.CreateReport(AnnualBalanceReport.PeriodCodes.LastQuarter);
         report.ShowPreview(title);
     }
 }
