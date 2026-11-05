@@ -1074,11 +1074,29 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current Balances.
+        /// </summary>
+        public static string Report_CurrentBalances {
+            get {
+                return ResourceManager.GetString("Report_CurrentBalances", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last transaction.
         /// </summary>
         public static string Report_LastBooking_Wrapped {
             get {
                 return ResourceManager.GetString("Report_LastBooking_Wrapped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Net Cash Flow.
+        /// </summary>
+        public static string Report_NetCashFlow {
+            get {
+                return ResourceManager.GetString("Report_NetCashFlow", resourceCulture);
             }
         }
         
@@ -1273,6 +1291,15 @@ namespace lg2de.SimpleAccounting.Properties {
         public static string Word_Balance {
             get {
                 return ResourceManager.GetString("Word_Balance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beginning Assets.
+        /// </summary>
+        public static string Word_BeginningAssets {
+            get {
+                return ResourceManager.GetString("Word_BeginningAssets", resourceCulture);
             }
         }
         
@@ -1497,7 +1524,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incomes.
+        ///   Looks up a localized string similar to Income.
         /// </summary>
         public static string Word_Incomes {
             get {
@@ -1587,6 +1614,15 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Other Cash Flow.
+        /// </summary>
+        public static string Word_OtherCashFlow {
+            get {
+                return ResourceManager.GetString("Word_OtherCashFlow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page.
         /// </summary>
         public static string Word_Page {
@@ -1596,7 +1632,7 @@ namespace lg2de.SimpleAccounting.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Distributions.
+        ///   Looks up a localized string similar to Assets &amp; Owner Equity.
         /// </summary>
         public static string Word_Receivables {
             get {

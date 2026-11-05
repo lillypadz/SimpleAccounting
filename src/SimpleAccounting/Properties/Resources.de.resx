@@ -452,6 +452,9 @@ konto</value>
   <data name="Report_NetProfitAndLoss" xml:space="preserve">
     <value>Jahresüberschuß/-verlust</value>
   </data>
+	<data name="Word_OtherCashFlow" xml:space="preserve">
+    <value>Other Cash Flow</value>
+  </data>
 	<data name="Word_Asset" xml:space="preserve">
     <value>Vermögen</value>
   </data>

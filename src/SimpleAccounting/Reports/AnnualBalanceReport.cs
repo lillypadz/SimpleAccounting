@@ -80,12 +80,43 @@ internal class AnnualBalanceReport : ReportBase, IAnnualBalanceReport
         var balanceNode = this.PrintDocument.SelectSingleNode("//text[@ID=\"balance\"]")!;
         balanceNode.InnerText = (totalIncome + totalExpense).FormatCurrency();
 
+        // cashflow
+        this.ProcessOtherCashFlow(out var totalOtherCashFlow, sDate, eDate);
+
+        this.ProcessBeginningAssets(out var beginningAssets, 19700101, sDate);
+
+        var netCashFlowNode = this.PrintDocument.SelectSingleNode("//text[@ID=\"netCashFlow\"]")!;
+        netCashFlowNode.InnerText = (totalIncome + totalExpense + totalOtherCashFlow).FormatCurrency();
+
         // receivables / Forderungen
         // liabilities / Verbindlichkeiten
         this.ProcessReceivablesAndLiabilities(out var totalReceivable, out var totalLiability);
 
         // asset / Vermögen
         this.ProcessAssets(totalReceivable, totalLiability);
+    }
+
+    private void ProcessBeginningAssets(out long assets, uint startDate, uint endDate)
+    {
+        var dataNode = this.PrintDocument.SelectSingleNode("//table/data[@target='beginningAssets']")!;
+        assets = 0;
+        var accounts = this.allAccounts.Where(a => a.Type == AccountDefinitionType.Asset);
+        foreach (var account in accounts)
+        {
+            long balance = this.GetAccountBalance(account, false, startDate, endDate);
+            if (balance == 0)
+            {
+                // account with balance zero is skipped
+                continue;
+            }
+
+            assets += balance;
+
+            dataNode.AppendChild(this.CreateAccountBalanceNode(account, balance));
+        }
+
+        var balanceElement = dataNode.SelectSingleNode(FourthColumnExpression)!;
+        balanceElement.InnerText = assets.FormatCurrency();
     }
 
     private void ProcessIncome(out long totalIncome, uint startDate, uint endDate)
@@ -132,6 +163,29 @@ internal class AnnualBalanceReport : ReportBase, IAnnualBalanceReport
 
         var balanceElement = dataNode.SelectSingleNode(FourthColumnExpression)!;
         balanceElement.InnerText = totalExpense.FormatCurrency();
+    }
+
+    private void ProcessOtherCashFlow(out long totalOtherCashFlow, uint startDate, uint endDate)
+    {
+        var dataNode = this.PrintDocument.SelectSingleNode("//table/data[@target='otherCashFlow']")!;
+        totalOtherCashFlow = 0;
+        var accounts = this.allAccounts.Where(a => a.Type == AccountDefinitionType.Debit || a.Type == AccountDefinitionType.Credit);
+        foreach (var account in accounts)
+        {
+            long balance = this.GetAccountBalance(account, true, startDate, endDate);
+            if (balance == 0)
+            {
+                // account with balance zero is skipped
+                continue;
+            }
+
+            totalOtherCashFlow += balance;
+
+            dataNode.AppendChild(this.CreateAccountBalanceNode(account, balance));
+        }
+
+        var balanceElement = dataNode.SelectSingleNode(FourthColumnExpression)!;
+        balanceElement.InnerText = totalOtherCashFlow.FormatCurrency();
     }
 
     private void ProcessReceivablesAndLiabilities(out long totalReceivable, out long totalLiability)

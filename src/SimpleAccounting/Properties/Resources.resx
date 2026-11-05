@@ -118,8 +118,8 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="Word_Date" xml:space="preserve">
-    <value>Date</value>
-  </data>
+		<value>Date</value>
+	</data>
 	<data name="Information_CultureChangeRestartRequired" xml:space="preserve">
     <value>You have changed the display language.
 You must restart the application to get setting take effect.</value>
@@ -473,19 +473,31 @@ value</value>
 account</value>
   </data>
 	<data name="Word_Receivables" xml:space="preserve">
-    <value>Distributions</value>
+    <value>Assets &amp; Owner Equity</value>
+  </data>
+	<data name="Report_NetCashFlow" xml:space="preserve">
+    <value>Net Cash Flow</value>
+  </data>
+	<data name="Report_CurrentBalances" xml:space="preserve">
+    <value>Current Balances</value>
   </data>
 	<data name="Word_Liabilities" xml:space="preserve">
     <value>Liabilities</value>
   </data>
+	<data name="Word_BeginningAssets" xml:space="preserve">
+    <value>Beginning Assets</value>
+  </data>
 	<data name="Word_Incomes" xml:space="preserve">
-    <value>Incomes</value>
+    <value>Income</value>
   </data>
 	<data name="Word_Expenses" xml:space="preserve">
     <value>Expenses</value>
   </data>
 	<data name="Report_NetProfitAndLoss" xml:space="preserve">
     <value>Net profit/loss</value>
+  </data>
+	<data name="Word_OtherCashFlow" xml:space="preserve">
+    <value>Other Cash Flow</value>
   </data>
 	<data name="Word_Asset" xml:space="preserve">
     <value>Asset</value>
